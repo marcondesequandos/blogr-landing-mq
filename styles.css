@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body, html {
+    overflow-x: hidden;
+    background: rgb(250, 250, 250);
+}
+
+/* Header Start */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(images/bg-pattern-intro.svg);
+    background-position: center;
+    background-size: 150%;
+    padding: 4rem 10rem;
+    border-bottom-left-radius: 6rem;
+    background-repeat: no-repeat;
+    background-color: hsl(353, 100%, 62%);
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .navmenu {
+    flex: 1;
+    margin-left: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .navmenu li {
+    margin-right: 1.5rem;
+    list-style: none;
+    position: relative;
+}
+
+.header .nav .navmenu li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.header .nav .navmenu li a:hover {
+    text-decoration: underline;
+}
+
+.header .nav .navmenu li img {
+    margin-left: .5rem;
+    transition: .5s;
+}
+
+.header .nav .navmenu li:hover img {
+    transform: rotate(-180deg);
+
+}
+
+.header .nav .navmenu li .ddown-menu {
+    display: none;
+    transition: .5s;
+    z-index: 10;
+
+}
+
+.header .nav .navmenu li:hover .ddown-menu {
+    display: block;    
+
+}
+
+.header .nav .navmenu li .ddown-menu ul {
+    position: absolute;
+    margin-top: .2rem;
+    margin-left: -2rem;
+    background: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0, 0 , 0, 0.4);
+}
+
+.header .nav .navmenu li .ddown-menu ul li {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.header .nav .navmenu li .ddown-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.header .nav .navmenu li .ddown-menu ul li a {
+    color: hsl(240, 0%, 56%);
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header .nav .navmenu li .ddown-menu ul li a:hover{
+    color: hsl(0, 0%, 5%);
+}
+
+.header .nav .regmenu {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav .regmenu li {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.header .nav .regmenu li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header .nav .regmenu li .signup {
+    padding: .8rem 2.5rem;
+    background: hsl(0,0%, 100%);
+    color: hsl(356, 100%, 66%);
+    border: none;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.header .nav .regmenu li .signup:hover {
+    background: hsl(355, 100%, 74%);
+    color: hsl(0,0%,100%);
+}
+
+.header .nav #mobmenu {
+    display: none;
+}
+
+.header .hcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.header .hcontent h1 {
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+.header .hcontent p {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.header .hcontent .hcont-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .hcontent .hcont-links li {
+    list-style: none;
+    margin: 0 .5rem;
+}
+
+.header .hcontent .hcont-links li a {
+    text-decoration: none;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header .hcontent .hcont-links li .sff {
+    background: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    border-radius: 2rem;
+    transition: .5;
+}
+
+.header .hcontent .hcont-links li .lrn {
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    transition: .5s;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.header .hcontent .hcont-links li .lrn:hover {
+    background:hsl(0, 0%, 100%);
+    color: hsl(355, 100%, 74%);    
+}
+
+.mobnav {
+    display: none;
+}
+
+
+/* Description (Main Content) Start */
+
+/* Intro */
+
+.intro {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 10rem 0 3rem 10rem;
+    background: hsl(0, 26%, 96%);
+    z-index: 2;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: hsl(208, 49%, 24%);
+    text-align: center; 
+    margin-bottom: -4rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.intro .intro-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro .intro-cont .icont-leftc {
+    flex-basis: 50%;
+}
+
+.intro .intro-cont .icont-leftc h3 {
+    font-size: 1.8rem;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 2.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.intro .intro-cont .icont-leftc p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+}
+
+.intro .intro-cont .icont-rightc {
+    position: relative;
+    flex-basis: 50%
+}
+
+.intro .intro-cont .icont-rightc .desktop-editor {
+    width: 150%;
+    position: relative;
+
+
+}
+
+.intro .intro-cont .icont-rightc .mobile-editor {
+    display: none;
+}
+
+/* Performance Info Start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
