@@ -395,6 +395,131 @@ body, html {
 }
 
 /* Footer Start */
+footer {
+    width: 100%;
+    padding: 4rem 10rem 6rem;
+    background: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-top-right-radius: 6rem;
+    z-index: 3;
+}
+
+footer .footer-el {
+    flex-basis: 20%;
+}
+
+footer .footer-el h6 {
+    font-size: 1rem;
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+footer .footer-el ul li {
+    list-style: none;
+    margin-bottom: 1rem;  
+}
+
+footer .footer-el ul li a {
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    font-size: 1rem;
+    transition: .5s;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+
+}
+
+footer .footer-el ul li a:hover{
+    text-decoration: underline;
+}
+
+footer .attribution {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: hsl(240, 2%, 79%);
+    font-family:  'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+
+footer .attribution a {
+    text-decoration: none;
+    color: hsl(0,0%,100%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+/* Responsive Design Start */
+
+/* Mobile Header Start */
+
+@media (max-width: 991px){
+    .header{
+        background: url(images/bg-pattern-intro.svg);
+        background-position: center;
+        background-size: 400%;
+        padding: 4rem 1.5rem;
+        background-color: hsl(353, 100%, 62%);
+    }
+
+    .header .nav {
+        justify-content: space-between;
+    }
+
+    .header .nav .navmenu{
+        display: none;
+    }
+    .header .nav .regmenu{
+        display: none;
+    }
+
+
+    .header .nav #mobmenu {
+        display: block;
+
+    }
+
+    .header .hcontent {
+        padding: 0 1.5rem;
+    }
+
+    .header .hcontent h1 {
+        font-size: 2.3rem;
+    }
+
+    .header .hcontent p {
+        margin-bottom: 4rem;
+    }
+
+    .header .hcontent .hcont-links li a{
+        padding: 1.2rem 1.5rem;
+        font-size: 1rem;
+    }
+
+
+/* Mobile Description Start */
+/* Desc Intro */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
