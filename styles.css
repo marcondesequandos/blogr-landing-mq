@@ -504,8 +504,241 @@ footer .attribution a {
     }
 
 
-/* Mobile Description Start */
-/* Desc Intro */
+    /* Mobile Description Start */
+    /* Desc Intro */
+    
+    .intro{
+        padding: 4rem 2rem 8rem;
+        
+    }
+
+    .intro h2{
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .intro .intro-cont {
+        flex-wrap: wrap;
+    }
+
+    .intro .intro-cont .icont-rightc {
+        position: relative;
+        flex-basis: 100%;        
+        display: flex;
+        order: 1;              
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .intro-cont .icont-rightc .desktop-editor {
+        display: none;
+    }
+
+    .intro .intro-cont .icont-rightc .mobile-editor {
+        display: block;
+        width: 110%;
+        margin-bottom: 2.3rem;
+    }
+
+    .intro .intro-cont .icont-leftc {
+        flex-basis: 100%;
+        order: 2;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .intro .intro-cont .icont-leftc h3 {
+        margin-bottom: 1rem;        
+    }
+
+    .intro .intro-cont .icont-leftc p{
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Desc Performance */
+
+    .perform {
+        padding: 8rem 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .perform .perf-rightc {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+   
+
+    .perform .perf-leftc .phone {
+        position: absolute;
+        left: 125%;
+        transform: translateX(-50%);
+        top: -19rem;
+        z-index: 3;
+        width: 375px;
+    }
+
+    .perform .perf-leftc .circle-pat {
+        position: absolute;
+        top: -22rem;   
+        left: -7rem;
+        z-index: 1;
+        width: 400%;
+    
+    }
+
+    /* Desc Features */
+
+    .feat {
+        padding: 4rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .feat .feat-leftc {
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+
+    .feat .feat-leftc .desktop-illust {
+        display: none;
+    }
+
+    .feat .feat-leftc .mobile-illust {
+        display: block;
+        width: 130%;
+        margin-bottom: 1.5rem;
+    }
+
+    .feat .feat-rightc{
+        flex-basis: 100%;
+        text-align: center; 
+    }
+
+    .feat .feat-rightc h5 {
+        font-size: 1.7rem;
+    }
+
+    /* Mobile Footer */
+
+    footer {
+        padding: 4rem 0 6 rem;
+        flex-wrap: wrap;
+    }
+
+    footer .footer-el {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    footer .attribution {
+        font-size: .9rem;        
+    }
+
+    footer .attribution a {
+        font-size: .9rem;
+    }
+
+    #mobnav {
+        display: block;
+        position: absolute;
+        top: 8.5rem;
+        transform: translateX(-50%);
+        width: 85%;
+        padding: 2rem 1.5rem;
+        background: hsl(0,0%,100%);
+        box-shadow: 0 0 30px 3px rgba(0, 0 , 0, 0.3);
+        text-align: center;
+        border: none;
+        border-radius: .5rem;
+        z-index: 10;
+        transition: .5s;      
+
+    }
+
+    .mobnav ul li {
+        list-style: none;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobnav ul li a {       
+        text-decoration: none;
+        color: hsl(240, 10%, 16%);
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;        
+    }
+
+    .mobnav ul li img {
+        margin-left: .5rem;
+        transition: .5s;
+    }
+
+    .mobnav ul li:nth-child(3){
+        position: relative;
+    }
+
+    .mobnav ul li:hover img{
+        transform: rotate(-180deg);        
+    }
+
+    .mobnav ul .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobnav ul .link .link-text{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobnav ul .link .ddown-menu-mobile {
+        background: hsl(0, 10%, 92%);
+        padding: 1.5rem 0;
+        width: 100%;
+        border-radius: .5rem;
+        display: none;
+        transition: 2s;
+    }
+
+    .mobnav ul .link:hover .ddown-menu-mobile {
+        display: block;
+    }
+
+    .mobnav ul .link .ddown-menu-mobile li:last-child{
+        margin-bottom: 0;        
+    }
+
+    .mobnav ul .signup {
+        margin-bottom: 0;
+    }
+
+    .mobnav ul .signup a {
+        padding: .8rem 2.5rem;
+        background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: hsl(0, 0%, 100%);
+        border-radius: 2rem;
+        transition: .5s;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+
+    }
+
+    .mobnav ul .signup a:hover {
+        background: linear-gradient(90deg, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    }
+
+
     
 }
 
