@@ -4,8 +4,7 @@
 
 Links:
 
-Project URL
-https://marcondeseq-bloggerlp.vercel.app/
+Project URL(https://marcondeseq-bloggerlp.vercel.app/)
 
 ## Welcome! 👋
 
