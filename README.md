@@ -2,9 +2,9 @@
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
-Links:
 
-Project URL(https://marcondeseq-bloggerlp.vercel.app/)
+
+Project URL: https://marcondeseq-bloggerlp.vercel.app/
 
 ## Welcome! 👋
 
